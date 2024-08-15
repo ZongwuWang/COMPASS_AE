@@ -1,0 +1,525 @@
+=============== Parameter Loading Finish ===============
+Time elapsed = 0.03 s
+=============== Network Structure Loading Finish ===============
+{'IH': 56, 'IW': 56, 'Cin': 64, 'KH': 3, 'KW': 3, 'Cout': 64, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 64, 'weight_col': 576}
+{'IH': 56, 'IW': 56, 'Cin': 64, 'KH': 3, 'KW': 3, 'Cout': 64, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 64, 'weight_col': 576}
+{'IH': 56, 'IW': 56, 'Cin': 64, 'KH': 3, 'KW': 3, 'Cout': 64, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 64, 'weight_col': 576}
+{'IH': 56, 'IW': 56, 'Cin': 64, 'KH': 3, 'KW': 3, 'Cout': 64, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 64, 'weight_col': 576}
+{'IH': 56, 'IW': 56, 'Cin': 64, 'KH': 3, 'KW': 3, 'Cout': 128, 'pooling': 0, 'stride': 2, 'isSNN': 1, 'T': 100, 'weight_row': 128, 'weight_col': 576}
+{'IH': 28, 'IW': 28, 'Cin': 128, 'KH': 3, 'KW': 3, 'Cout': 128, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 128, 'weight_col': 1152}
+{'IH': 28, 'IW': 28, 'Cin': 128, 'KH': 3, 'KW': 3, 'Cout': 128, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 128, 'weight_col': 1152}
+{'IH': 28, 'IW': 28, 'Cin': 128, 'KH': 3, 'KW': 3, 'Cout': 128, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 128, 'weight_col': 1152}
+{'IH': 28, 'IW': 28, 'Cin': 128, 'KH': 3, 'KW': 3, 'Cout': 256, 'pooling': 0, 'stride': 2, 'isSNN': 1, 'T': 100, 'weight_row': 256, 'weight_col': 1152}
+{'IH': 14, 'IW': 14, 'Cin': 256, 'KH': 3, 'KW': 3, 'Cout': 256, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 256, 'weight_col': 2304}
+{'IH': 14, 'IW': 14, 'Cin': 256, 'KH': 3, 'KW': 3, 'Cout': 256, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 256, 'weight_col': 2304}
+{'IH': 14, 'IW': 14, 'Cin': 256, 'KH': 3, 'KW': 3, 'Cout': 256, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 256, 'weight_col': 2304}
+{'IH': 14, 'IW': 14, 'Cin': 256, 'KH': 3, 'KW': 3, 'Cout': 512, 'pooling': 0, 'stride': 2, 'isSNN': 1, 'T': 100, 'weight_row': 512, 'weight_col': 2304}
+{'IH': 7, 'IW': 7, 'Cin': 512, 'KH': 3, 'KW': 3, 'Cout': 512, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 512, 'weight_col': 4608}
+{'IH': 7, 'IW': 7, 'Cin': 512, 'KH': 3, 'KW': 3, 'Cout': 512, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 512, 'weight_col': 4608}
+{'IH': 7, 'IW': 7, 'Cin': 512, 'KH': 3, 'KW': 3, 'Cout': 512, 'pooling': 1, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 512, 'weight_col': 4608}
+
+------------------------------ FloorPlan --------------------------------
+Tile and PE size are optimized to maximize memory utilization ( = memory mapped by synapse / total memory on chip)
+Desired Conventional Mapped Tile Storage Size: 1024 x 1024
+Desired Conventional PE Storage Size: 512 x 512
+User-defined SubArray Size: 128 x 128
+----------------- # of tile used for each layer -----------------
+Layer 1: 40
+Layer 2: 40
+Layer 3: 40
+Layer 4: 40
+Layer 5: 40
+Layer 6: 18
+Layer 7: 18
+Layer 8: 18
+Layer 9: 36
+Layer 10: 18
+Layer 11: 18
+Layer 12: 18
+Layer 13: 36
+Layer 14: 36
+Layer 15: 36
+Layer 16: 36
+----------------- Speed-up of each layer ------------------
+Layer 1: 64
+Layer 2: 64
+Layer 3: 64
+Layer 4: 64
+Layer 5: 64
+Layer 6: 16
+Layer 7: 16
+Layer 8: 16
+Layer 9: 16
+Layer 10: 4
+Layer 11: 4
+Layer 12: 4
+Layer 13: 4
+Layer 14: 2
+Layer 15: 2
+Layer 16: 2
+----------------- Utilization of each layer ------------------
+Layer 1: 0.45
+Layer 2: 0.45
+Layer 3: 0.45
+Layer 4: 0.45
+Layer 5: 0.9
+Layer 6: 1.0
+Layer 7: 1.0
+Layer 8: 1.0
+Layer 9: 1.0
+Layer 10: 1.0
+Layer 11: 1.0
+Layer 12: 1.0
+Layer 13: 1.0
+Layer 14: 1.0
+Layer 15: 1.0
+Layer 16: 1.0
+Memory Utilization of Whole Chip: 81.14754098360656 %
+---------------------------- FloorPlan Done ------------------------------
+Chip Area: 1.46e+08 um^2
+Chip ADC (or S/As and precharger for SRAM) Area: 7.02e+06 um^2 (4.82 %)
+Chip IC Area (Global and Tile/PE local): 5.61e+06 um^2 (3.85 %)
+Chip Accum (subarray level: adders, shiftAdds; PE/Tile/Global level: accumulation units) Area: 2.63e+07 um^2 (18.04 %)
+Chip Other (e.g. decoders, mux, switchmatrix, buffers, IC, pooling and activation units) Area: 2.40e+07 um^2 (16.47 %)
+Chip Popcnt Area: 7.67e+05 um^2 (0.53 %)
+Chip Array Area: 6.93e+07 um^2 (47.60 %)
+Time elapsed = 18.89 s
+=============== Chip Clk Period Estimating ===============
+Time elapsed after estimating layer 1 = 38.77 s
+Chip Clk Period: 1.0281894905588658 ns
+=============== Chip Performance Estimating ===============
+Time elapsed before estimating layer 1 ts 1 ====> 94.95 s
+TS 0 layer 1 readLatency: 1.95e+07 ns
+TS 0 layer 1 bufferLatency: 1.86e+07 ns (95.67%)
+TS 0 layer 1 icLatency: 2.04e+02 ns
+TS 0 layer 1 coreLatencyADC: 3.22e+03 ns (0.02%)
+TS 0 layer 1 coreLatencyAccum: 6.78e+05 ns (3.48%)
+TS 0 layer 1 coreLatencyOther: 1.61e+05 ns (0.83%)
+TS 0 layer 1 arrayReadLatency: 5.90e+05 ns (3.03%)
+TS 0 layer 1 arrayLatencyADC: 3.22e+03 ns (0.02%)
+TS 0 layer 1 arrayLatencyAccum: 5.87e+05 ns (3.01%)
+TS 0 layer 1 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 1 readLatencyBuffer: 1.86e+07 ns (95.68%)
+TS 0 layer 1 readLatencyIC: 4.09e+02 ns (0.00%)
+TS 0 layer 1 readDynamicEnergy: 1.69e+08 pJ
+TS 0 layer 1 leakagePower: 356.96 uW
+TS 0 layer 1 leakageEnergy: 6.95e+06 pJ
+TS 0 layer 1 bufferDynamicEnergy: 1.86e+06 pJ (1.10%)
+TS 0 layer 1 icDynamicEnergy: 1.11e+04 pJ (0.01%)
+TS 0 layer 1 coreEnergyADC: 4.71e+05 pJ (0.28%)
+TS 0 layer 1 coreEnergyAccum: 1.63e+08 pJ (96.75%)
+TS 0 layer 1 coreEnergyOther: 6.39e+05 pJ (0.38%)
+TS 0 layer 1 coreEnergyPopcnt: 2.50e+06 pJ (1.48%)
+TS 0 layer 1 arrayReadDynamicEnergy: 1.66e+08 pJ (98.50%)
+TS 0 layer 1 arrayEnergyADC: 4.71e+05 pJ (0.28%)
+TS 0 layer 1 arrayEnergyAccum: 1.63e+08 pJ (96.74%)
+TS 0 layer 1 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 1 arrayEnergyPopcnt: 2.50e+06 pJ (1.48%)
+TS 0 layer 1 readDynamicEnergyBuffer: 1.86e+06 pJ (1.10%)
+TS 0 layer 1 readDynamicEnergyIC: 2.71e+04 pJ (0.02%)
+Time elapsed before estimating layer 2 ts 1 ====> 151.42 s
+TS 0 layer 2 readLatency: 1.93e+07 ns
+TS 0 layer 2 bufferLatency: 1.86e+07 ns (96.34%)
+TS 0 layer 2 icLatency: 2.04e+02 ns
+TS 0 layer 2 coreLatencyADC: 3.22e+03 ns (0.02%)
+TS 0 layer 2 coreLatencyAccum: 5.43e+05 ns (2.81%)
+TS 0 layer 2 coreLatencyOther: 1.61e+05 ns (0.83%)
+TS 0 layer 2 arrayReadLatency: 4.55e+05 ns (2.35%)
+TS 0 layer 2 arrayLatencyADC: 3.22e+03 ns (0.02%)
+TS 0 layer 2 arrayLatencyAccum: 4.52e+05 ns (2.34%)
+TS 0 layer 2 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 2 readLatencyBuffer: 1.86e+07 ns (96.35%)
+TS 0 layer 2 readLatencyIC: 4.09e+02 ns (0.00%)
+TS 0 layer 2 readDynamicEnergy: 2.39e+08 pJ
+TS 0 layer 2 leakagePower: 356.96 uW
+TS 0 layer 2 leakageEnergy: 6.90e+06 pJ
+TS 0 layer 2 bufferDynamicEnergy: 1.86e+06 pJ (0.78%)
+TS 0 layer 2 icDynamicEnergy: 1.11e+04 pJ (0.00%)
+TS 0 layer 2 coreEnergyADC: 4.71e+05 pJ (0.20%)
+TS 0 layer 2 coreEnergyAccum: 2.33e+08 pJ (97.71%)
+TS 0 layer 2 coreEnergyOther: 6.39e+05 pJ (0.27%)
+TS 0 layer 2 coreEnergyPopcnt: 2.50e+06 pJ (1.05%)
+TS 0 layer 2 arrayReadDynamicEnergy: 2.36e+08 pJ (98.94%)
+TS 0 layer 2 arrayEnergyADC: 4.71e+05 pJ (0.20%)
+TS 0 layer 2 arrayEnergyAccum: 2.33e+08 pJ (97.70%)
+TS 0 layer 2 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 2 arrayEnergyPopcnt: 2.50e+06 pJ (1.05%)
+TS 0 layer 2 readDynamicEnergyBuffer: 1.86e+06 pJ (0.78%)
+TS 0 layer 2 readDynamicEnergyIC: 2.71e+04 pJ (0.01%)
+Time elapsed before estimating layer 3 ts 1 ====> 207.16 s
+TS 0 layer 3 readLatency: 1.95e+07 ns
+TS 0 layer 3 bufferLatency: 1.86e+07 ns (95.63%)
+TS 0 layer 3 icLatency: 2.04e+02 ns
+TS 0 layer 3 coreLatencyADC: 3.22e+03 ns (0.02%)
+TS 0 layer 3 coreLatencyAccum: 6.88e+05 ns (3.53%)
+TS 0 layer 3 coreLatencyOther: 1.61e+05 ns (0.83%)
+TS 0 layer 3 arrayReadLatency: 6.00e+05 ns (3.08%)
+TS 0 layer 3 arrayLatencyADC: 3.22e+03 ns (0.02%)
+TS 0 layer 3 arrayLatencyAccum: 5.97e+05 ns (3.06%)
+TS 0 layer 3 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 3 readLatencyBuffer: 1.86e+07 ns (95.63%)
+TS 0 layer 3 readLatencyIC: 4.09e+02 ns (0.00%)
+TS 0 layer 3 readDynamicEnergy: 2.35e+08 pJ
+TS 0 layer 3 leakagePower: 356.96 uW
+TS 0 layer 3 leakageEnergy: 6.96e+06 pJ
+TS 0 layer 3 bufferDynamicEnergy: 1.86e+06 pJ (0.79%)
+TS 0 layer 3 icDynamicEnergy: 1.11e+04 pJ (0.00%)
+TS 0 layer 3 coreEnergyADC: 4.71e+05 pJ (0.20%)
+TS 0 layer 3 coreEnergyAccum: 2.30e+08 pJ (97.67%)
+TS 0 layer 3 coreEnergyOther: 6.39e+05 pJ (0.27%)
+TS 0 layer 3 coreEnergyPopcnt: 2.50e+06 pJ (1.06%)
+TS 0 layer 3 arrayReadDynamicEnergy: 2.33e+08 pJ (98.93%)
+TS 0 layer 3 arrayEnergyADC: 4.71e+05 pJ (0.20%)
+TS 0 layer 3 arrayEnergyAccum: 2.30e+08 pJ (97.66%)
+TS 0 layer 3 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 3 arrayEnergyPopcnt: 2.50e+06 pJ (1.06%)
+TS 0 layer 3 readDynamicEnergyBuffer: 1.86e+06 pJ (0.79%)
+TS 0 layer 3 readDynamicEnergyIC: 2.71e+04 pJ (0.01%)
+Time elapsed before estimating layer 4 ts 1 ====> 219.18 s
+TS 0 layer 4 readLatency: 1.90e+07 ns
+TS 0 layer 4 bufferLatency: 1.86e+07 ns (98.18%)
+TS 0 layer 4 icLatency: 2.04e+02 ns
+TS 0 layer 4 coreLatencyADC: 8.06e+02 ns (0.00%)
+TS 0 layer 4 coreLatencyAccum: 1.83e+05 ns (0.96%)
+TS 0 layer 4 coreLatencyOther: 1.61e+05 ns (0.85%)
+TS 0 layer 4 arrayReadLatency: 9.27e+04 ns (0.49%)
+TS 0 layer 4 arrayLatencyADC: 8.06e+02 ns (0.00%)
+TS 0 layer 4 arrayLatencyAccum: 9.19e+04 ns (0.48%)
+TS 0 layer 4 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 4 readLatencyBuffer: 1.86e+07 ns (98.19%)
+TS 0 layer 4 readLatencyIC: 4.09e+02 ns (0.00%)
+TS 0 layer 4 readDynamicEnergy: 5.35e+07 pJ
+TS 0 layer 4 leakagePower: 356.96 uW
+TS 0 layer 4 leakageEnergy: 6.77e+06 pJ
+TS 0 layer 4 bufferDynamicEnergy: 1.86e+06 pJ (3.47%)
+TS 0 layer 4 icDynamicEnergy: 1.11e+04 pJ (0.02%)
+TS 0 layer 4 coreEnergyADC: 1.18e+05 pJ (0.22%)
+TS 0 layer 4 coreEnergyAccum: 5.03e+07 pJ (93.93%)
+TS 0 layer 4 coreEnergyOther: 6.39e+05 pJ (1.19%)
+TS 0 layer 4 coreEnergyPopcnt: 6.24e+05 pJ (1.17%)
+TS 0 layer 4 arrayReadDynamicEnergy: 5.10e+07 pJ (95.28%)
+TS 0 layer 4 arrayEnergyADC: 1.18e+05 pJ (0.22%)
+TS 0 layer 4 arrayEnergyAccum: 5.03e+07 pJ (93.90%)
+TS 0 layer 4 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 4 arrayEnergyPopcnt: 6.24e+05 pJ (1.17%)
+TS 0 layer 4 readDynamicEnergyBuffer: 1.86e+06 pJ (3.48%)
+TS 0 layer 4 readDynamicEnergyIC: 2.71e+04 pJ (0.05%)
+Time elapsed before estimating layer 5 ts 1 ====> 235.96 s
+TS 0 layer 5 readLatency: 5.50e+06 ns
+TS 0 layer 5 bufferLatency: 5.13e+06 ns (93.30%)
+TS 0 layer 5 icLatency: 7.05e+02 ns
+TS 0 layer 5 coreLatencyADC: 1.61e+03 ns (0.03%)
+TS 0 layer 5 coreLatencyAccum: 2.86e+05 ns (5.19%)
+TS 0 layer 5 coreLatencyOther: 8.06e+04 ns (1.47%)
+TS 0 layer 5 arrayReadLatency: 2.64e+05 ns (4.81%)
+TS 0 layer 5 arrayLatencyADC: 1.61e+03 ns (0.03%)
+TS 0 layer 5 arrayLatencyAccum: 2.63e+05 ns (4.78%)
+TS 0 layer 5 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 5 readLatencyBuffer: 5.13e+06 ns (93.40%)
+TS 0 layer 5 readLatencyIC: 1.41e+03 ns (0.03%)
+TS 0 layer 5 readDynamicEnergy: 7.35e+07 pJ
+TS 0 layer 5 leakagePower: 652.55 uW
+TS 0 layer 5 leakageEnergy: 3.59e+06 pJ
+TS 0 layer 5 bufferDynamicEnergy: 4.72e+05 pJ (0.64%)
+TS 0 layer 5 icDynamicEnergy: 4.08e+04 pJ (0.06%)
+TS 0 layer 5 coreEnergyADC: 2.36e+05 pJ (0.32%)
+TS 0 layer 5 coreEnergyAccum: 7.18e+07 pJ (97.70%)
+TS 0 layer 5 coreEnergyOther: 3.19e+05 pJ (0.43%)
+TS 0 layer 5 coreEnergyPopcnt: 6.24e+05 pJ (0.85%)
+TS 0 layer 5 arrayReadDynamicEnergy: 7.26e+07 pJ (98.85%)
+TS 0 layer 5 arrayEnergyADC: 2.36e+05 pJ (0.32%)
+TS 0 layer 5 arrayEnergyAccum: 7.18e+07 pJ (97.68%)
+TS 0 layer 5 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 5 arrayEnergyPopcnt: 6.24e+05 pJ (0.85%)
+TS 0 layer 5 readDynamicEnergyBuffer: 4.85e+05 pJ (0.66%)
+TS 0 layer 5 readDynamicEnergyIC: 1.01e+05 pJ (0.14%)
+Time elapsed before estimating layer 6 ts 1 ====> 262.83 s
+TS 0 layer 6 readLatency: 2.06e+07 ns
+TS 0 layer 6 bufferLatency: 2.01e+07 ns (97.42%)
+TS 0 layer 6 icLatency: 7.05e+02 ns
+TS 0 layer 6 coreLatencyADC: 6.45e+03 ns (0.03%)
+TS 0 layer 6 coreLatencyAccum: 4.45e+05 ns (2.16%)
+TS 0 layer 6 coreLatencyOther: 8.06e+04 ns (0.39%)
+TS 0 layer 6 arrayReadLatency: 4.39e+05 ns (2.13%)
+TS 0 layer 6 arrayLatencyADC: 6.45e+03 ns (0.03%)
+TS 0 layer 6 arrayLatencyAccum: 4.33e+05 ns (2.10%)
+TS 0 layer 6 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 6 readLatencyBuffer: 2.01e+07 ns (97.44%)
+TS 0 layer 6 readLatencyIC: 1.41e+03 ns (0.01%)
+TS 0 layer 6 readDynamicEnergy: 1.00e+08 pJ
+TS 0 layer 6 leakagePower: 1193.18 uW
+TS 0 layer 6 leakageEnergy: 2.46e+07 pJ
+TS 0 layer 6 bufferDynamicEnergy: 9.42e+05 pJ (0.94%)
+TS 0 layer 6 icDynamicEnergy: 7.80e+04 pJ (0.08%)
+TS 0 layer 6 coreEnergyADC: 4.71e+05 pJ (0.47%)
+TS 0 layer 6 coreEnergyAccum: 9.70e+07 pJ (96.94%)
+TS 0 layer 6 coreEnergyOther: 3.19e+05 pJ (0.32%)
+TS 0 layer 6 coreEnergyPopcnt: 1.25e+06 pJ (1.25%)
+TS 0 layer 6 arrayReadDynamicEnergy: 9.87e+07 pJ (98.65%)
+TS 0 layer 6 arrayEnergyADC: 4.71e+05 pJ (0.47%)
+TS 0 layer 6 arrayEnergyAccum: 9.70e+07 pJ (96.93%)
+TS 0 layer 6 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 6 arrayEnergyPopcnt: 1.25e+06 pJ (1.25%)
+TS 0 layer 6 readDynamicEnergyBuffer: 9.67e+05 pJ (0.97%)
+TS 0 layer 6 readDynamicEnergyIC: 1.95e+05 pJ (0.19%)
+Time elapsed before estimating layer 7 ts 1 ====> 289.26 s
+TS 0 layer 7 readLatency: 2.09e+07 ns
+TS 0 layer 7 bufferLatency: 2.01e+07 ns (95.88%)
+TS 0 layer 7 icLatency: 7.05e+02 ns
+TS 0 layer 7 coreLatencyADC: 6.45e+03 ns (0.03%)
+TS 0 layer 7 coreLatencyAccum: 7.75e+05 ns (3.70%)
+TS 0 layer 7 coreLatencyOther: 8.06e+04 ns (0.39%)
+TS 0 layer 7 arrayReadLatency: 7.70e+05 ns (3.68%)
+TS 0 layer 7 arrayLatencyADC: 6.45e+03 ns (0.03%)
+TS 0 layer 7 arrayLatencyAccum: 7.63e+05 ns (3.65%)
+TS 0 layer 7 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 7 readLatencyBuffer: 2.01e+07 ns (95.91%)
+TS 0 layer 7 readLatencyIC: 1.41e+03 ns (0.01%)
+TS 0 layer 7 readDynamicEnergy: 5.34e+07 pJ
+TS 0 layer 7 leakagePower: 1193.18 uW
+TS 0 layer 7 leakageEnergy: 2.50e+07 pJ
+TS 0 layer 7 bufferDynamicEnergy: 9.42e+05 pJ (1.76%)
+TS 0 layer 7 icDynamicEnergy: 7.80e+04 pJ (0.15%)
+TS 0 layer 7 coreEnergyADC: 4.71e+05 pJ (0.88%)
+TS 0 layer 7 coreEnergyAccum: 5.03e+07 pJ (94.27%)
+TS 0 layer 7 coreEnergyOther: 3.19e+05 pJ (0.60%)
+TS 0 layer 7 coreEnergyPopcnt: 1.25e+06 pJ (2.34%)
+TS 0 layer 7 arrayReadDynamicEnergy: 5.21e+07 pJ (97.47%)
+TS 0 layer 7 arrayEnergyADC: 4.71e+05 pJ (0.88%)
+TS 0 layer 7 arrayEnergyAccum: 5.03e+07 pJ (94.25%)
+TS 0 layer 7 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 7 arrayEnergyPopcnt: 1.25e+06 pJ (2.34%)
+TS 0 layer 7 readDynamicEnergyBuffer: 9.67e+05 pJ (1.81%)
+TS 0 layer 7 readDynamicEnergyIC: 1.95e+05 pJ (0.36%)
+Time elapsed before estimating layer 8 ts 1 ====> 295.75 s
+TS 0 layer 8 readLatency: 2.03e+07 ns
+TS 0 layer 8 bufferLatency: 2.01e+07 ns (98.93%)
+TS 0 layer 8 icLatency: 7.05e+02 ns
+TS 0 layer 8 coreLatencyADC: 1.61e+03 ns (0.01%)
+TS 0 layer 8 coreLatencyAccum: 1.35e+05 ns (0.66%)
+TS 0 layer 8 coreLatencyOther: 8.06e+04 ns (0.40%)
+TS 0 layer 8 arrayReadLatency: 1.25e+05 ns (0.61%)
+TS 0 layer 8 arrayLatencyADC: 1.61e+03 ns (0.01%)
+TS 0 layer 8 arrayLatencyAccum: 1.23e+05 ns (0.61%)
+TS 0 layer 8 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 8 readLatencyBuffer: 2.01e+07 ns (98.96%)
+TS 0 layer 8 readLatencyIC: 1.41e+03 ns (0.01%)
+TS 0 layer 8 readDynamicEnergy: 2.49e+07 pJ
+TS 0 layer 8 leakagePower: 1193.18 uW
+TS 0 layer 8 leakageEnergy: 2.42e+07 pJ
+TS 0 layer 8 bufferDynamicEnergy: 9.42e+05 pJ (3.79%)
+TS 0 layer 8 icDynamicEnergy: 7.80e+04 pJ (0.31%)
+TS 0 layer 8 coreEnergyADC: 1.18e+05 pJ (0.47%)
+TS 0 layer 8 coreEnergyAccum: 2.31e+07 pJ (92.89%)
+TS 0 layer 8 coreEnergyOther: 3.19e+05 pJ (1.28%)
+TS 0 layer 8 coreEnergyPopcnt: 3.12e+05 pJ (1.26%)
+TS 0 layer 8 arrayReadDynamicEnergy: 2.35e+07 pJ (94.57%)
+TS 0 layer 8 arrayEnergyADC: 1.18e+05 pJ (0.47%)
+TS 0 layer 8 arrayEnergyAccum: 2.31e+07 pJ (92.84%)
+TS 0 layer 8 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 8 arrayEnergyPopcnt: 3.12e+05 pJ (1.26%)
+TS 0 layer 8 readDynamicEnergyBuffer: 9.67e+05 pJ (3.89%)
+TS 0 layer 8 readDynamicEnergyIC: 1.95e+05 pJ (0.78%)
+Time elapsed before estimating layer 9 ts 1 ====> 307.86 s
+TS 0 layer 9 readLatency: 3.02e+06 ns
+TS 0 layer 9 bufferLatency: 2.78e+06 ns (92.10%)
+TS 0 layer 9 icLatency: 2.59e+03 ns
+TS 0 layer 9 coreLatencyADC: 1.61e+03 ns (0.05%)
+TS 0 layer 9 coreLatencyAccum: 1.94e+05 ns (6.43%)
+TS 0 layer 9 coreLatencyOther: 4.03e+04 ns (1.34%)
+TS 0 layer 9 arrayReadLatency: 1.88e+05 ns (6.22%)
+TS 0 layer 9 arrayLatencyADC: 1.61e+03 ns (0.05%)
+TS 0 layer 9 arrayLatencyAccum: 1.86e+05 ns (6.16%)
+TS 0 layer 9 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 9 readLatencyBuffer: 2.80e+06 ns (92.80%)
+TS 0 layer 9 readLatencyIC: 5.19e+03 ns (0.17%)
+TS 0 layer 9 readDynamicEnergy: 3.11e+07 pJ
+TS 0 layer 9 leakagePower: 2276.42 uW
+TS 0 layer 9 leakageEnergy: 6.87e+06 pJ
+TS 0 layer 9 bufferDynamicEnergy: 2.85e+05 pJ (0.92%)
+TS 0 layer 9 icDynamicEnergy: 2.98e+05 pJ (0.96%)
+TS 0 layer 9 coreEnergyADC: 2.36e+05 pJ (0.76%)
+TS 0 layer 9 coreEnergyAccum: 2.95e+07 pJ (94.84%)
+TS 0 layer 9 coreEnergyOther: 1.60e+05 pJ (0.51%)
+TS 0 layer 9 coreEnergyPopcnt: 6.24e+05 pJ (2.01%)
+TS 0 layer 9 arrayReadDynamicEnergy: 3.03e+07 pJ (97.48%)
+TS 0 layer 9 arrayEnergyADC: 2.36e+05 pJ (0.76%)
+TS 0 layer 9 arrayEnergyAccum: 2.94e+07 pJ (94.71%)
+TS 0 layer 9 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 9 arrayEnergyPopcnt: 6.24e+05 pJ (2.01%)
+TS 0 layer 9 readDynamicEnergyBuffer: 3.82e+05 pJ (1.23%)
+TS 0 layer 9 readDynamicEnergyIC: 7.51e+05 pJ (2.42%)
+Time elapsed before estimating layer 10 ts 1 ====> 328.70 s
+TS 0 layer 10 readLatency: 1.06e+07 ns
+TS 0 layer 10 bufferLatency: 1.01e+07 ns (95.16%)
+TS 0 layer 10 icLatency: 2.59e+03 ns
+TS 0 layer 10 coreLatencyADC: 6.45e+03 ns (0.06%)
+TS 0 layer 10 coreLatencyAccum: 4.62e+05 ns (4.37%)
+TS 0 layer 10 coreLatencyOther: 4.03e+04 ns (0.38%)
+TS 0 layer 10 arrayReadLatency: 4.67e+05 ns (4.42%)
+TS 0 layer 10 arrayLatencyADC: 6.45e+03 ns (0.06%)
+TS 0 layer 10 arrayLatencyAccum: 4.61e+05 ns (4.36%)
+TS 0 layer 10 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 10 readLatencyBuffer: 1.01e+07 ns (95.36%)
+TS 0 layer 10 readLatencyIC: 5.19e+03 ns (0.05%)
+TS 0 layer 10 readDynamicEnergy: 7.81e+07 pJ
+TS 0 layer 10 leakagePower: 4552.85 uW
+TS 0 layer 10 leakageEnergy: 4.81e+07 pJ
+TS 0 layer 10 bufferDynamicEnergy: 5.69e+05 pJ (0.73%)
+TS 0 layer 10 icDynamicEnergy: 5.96e+05 pJ (0.76%)
+TS 0 layer 10 coreEnergyADC: 4.71e+05 pJ (0.60%)
+TS 0 layer 10 coreEnergyAccum: 7.50e+07 pJ (96.10%)
+TS 0 layer 10 coreEnergyOther: 1.60e+05 pJ (0.20%)
+TS 0 layer 10 coreEnergyPopcnt: 1.25e+06 pJ (1.60%)
+TS 0 layer 10 arrayReadDynamicEnergy: 7.67e+07 pJ (98.20%)
+TS 0 layer 10 arrayEnergyADC: 4.71e+05 pJ (0.60%)
+TS 0 layer 10 arrayEnergyAccum: 7.50e+07 pJ (96.00%)
+TS 0 layer 10 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 10 arrayEnergyPopcnt: 1.25e+06 pJ (1.60%)
+TS 0 layer 10 readDynamicEnergyBuffer: 7.63e+05 pJ (0.98%)
+TS 0 layer 10 readDynamicEnergyIC: 1.50e+06 pJ (1.92%)
+Time elapsed before estimating layer 11 ts 1 ====> 349.64 s
+TS 0 layer 11 readLatency: 1.08e+07 ns
+TS 0 layer 11 bufferLatency: 1.01e+07 ns (93.30%)
+TS 0 layer 11 icLatency: 2.59e+03 ns
+TS 0 layer 11 coreLatencyADC: 6.45e+03 ns (0.06%)
+TS 0 layer 11 coreLatencyAccum: 6.72e+05 ns (6.24%)
+TS 0 layer 11 coreLatencyOther: 4.03e+04 ns (0.37%)
+TS 0 layer 11 arrayReadLatency: 6.78e+05 ns (6.29%)
+TS 0 layer 11 arrayLatencyADC: 6.45e+03 ns (0.06%)
+TS 0 layer 11 arrayLatencyAccum: 6.71e+05 ns (6.23%)
+TS 0 layer 11 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 11 readLatencyBuffer: 1.01e+07 ns (93.50%)
+TS 0 layer 11 readLatencyIC: 5.19e+03 ns (0.05%)
+TS 0 layer 11 readDynamicEnergy: 5.02e+07 pJ
+TS 0 layer 11 leakagePower: 4552.85 uW
+TS 0 layer 11 leakageEnergy: 4.91e+07 pJ
+TS 0 layer 11 bufferDynamicEnergy: 5.69e+05 pJ (1.13%)
+TS 0 layer 11 icDynamicEnergy: 5.96e+05 pJ (1.19%)
+TS 0 layer 11 coreEnergyADC: 4.71e+05 pJ (0.94%)
+TS 0 layer 11 coreEnergyAccum: 4.71e+07 pJ (93.93%)
+TS 0 layer 11 coreEnergyOther: 1.60e+05 pJ (0.32%)
+TS 0 layer 11 coreEnergyPopcnt: 1.25e+06 pJ (2.49%)
+TS 0 layer 11 arrayReadDynamicEnergy: 4.88e+07 pJ (97.20%)
+TS 0 layer 11 arrayEnergyADC: 4.71e+05 pJ (0.94%)
+TS 0 layer 11 arrayEnergyAccum: 4.71e+07 pJ (93.78%)
+TS 0 layer 11 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 11 arrayEnergyPopcnt: 1.25e+06 pJ (2.49%)
+TS 0 layer 11 readDynamicEnergyBuffer: 7.63e+05 pJ (1.52%)
+TS 0 layer 11 readDynamicEnergyIC: 1.50e+06 pJ (2.99%)
+Time elapsed before estimating layer 12 ts 1 ====> 355.46 s
+TS 0 layer 12 readLatency: 1.02e+07 ns
+TS 0 layer 12 bufferLatency: 1.01e+07 ns (98.67%)
+TS 0 layer 12 icLatency: 2.59e+03 ns
+TS 0 layer 12 coreLatencyADC: 1.61e+03 ns (0.02%)
+TS 0 layer 12 coreLatencyAccum: 9.13e+04 ns (0.90%)
+TS 0 layer 12 coreLatencyOther: 4.03e+04 ns (0.40%)
+TS 0 layer 12 arrayReadLatency: 9.18e+04 ns (0.90%)
+TS 0 layer 12 arrayLatencyADC: 1.61e+03 ns (0.02%)
+TS 0 layer 12 arrayLatencyAccum: 9.02e+04 ns (0.88%)
+TS 0 layer 12 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 12 readLatencyBuffer: 1.01e+07 ns (98.88%)
+TS 0 layer 12 readLatencyIC: 5.19e+03 ns (0.05%)
+TS 0 layer 12 readDynamicEnergy: 1.54e+07 pJ
+TS 0 layer 12 leakagePower: 4552.85 uW
+TS 0 layer 12 leakageEnergy: 4.64e+07 pJ
+TS 0 layer 12 bufferDynamicEnergy: 5.69e+05 pJ (3.69%)
+TS 0 layer 12 icDynamicEnergy: 5.96e+05 pJ (3.86%)
+TS 0 layer 12 coreEnergyADC: 1.18e+05 pJ (0.76%)
+TS 0 layer 12 coreEnergyAccum: 1.37e+07 pJ (88.63%)
+TS 0 layer 12 coreEnergyOther: 1.60e+05 pJ (1.03%)
+TS 0 layer 12 coreEnergyPopcnt: 3.12e+05 pJ (2.02%)
+TS 0 layer 12 arrayReadDynamicEnergy: 1.40e+07 pJ (90.90%)
+TS 0 layer 12 arrayEnergyADC: 1.18e+05 pJ (0.76%)
+TS 0 layer 12 arrayEnergyAccum: 1.36e+07 pJ (88.12%)
+TS 0 layer 12 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 12 arrayEnergyPopcnt: 3.12e+05 pJ (2.02%)
+TS 0 layer 12 readDynamicEnergyBuffer: 7.63e+05 pJ (4.94%)
+TS 0 layer 12 readDynamicEnergyIC: 1.50e+06 pJ (9.73%)
+Time elapsed before estimating layer 13 ts 1 ====> 367.18 s
+TS 0 layer 13 readLatency: 1.59e+06 ns
+TS 0 layer 13 bufferLatency: 1.46e+06 ns (91.76%)
+TS 0 layer 13 icLatency: 9.93e+03 ns
+TS 0 layer 13 coreLatencyADC: 1.61e+03 ns (0.10%)
+TS 0 layer 13 coreLatencyAccum: 9.95e+04 ns (6.25%)
+TS 0 layer 13 coreLatencyOther: 2.02e+04 ns (1.27%)
+TS 0 layer 13 arrayReadLatency: 9.71e+04 ns (6.10%)
+TS 0 layer 13 arrayLatencyADC: 1.61e+03 ns (0.10%)
+TS 0 layer 13 arrayLatencyAccum: 9.55e+04 ns (6.00%)
+TS 0 layer 13 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 13 readLatencyBuffer: 1.54e+06 ns (96.89%)
+TS 0 layer 13 readLatencyIC: 1.99e+04 ns (1.25%)
+TS 0 layer 13 readDynamicEnergy: 1.33e+07 pJ
+TS 0 layer 13 leakagePower: 8886.50 uW
+TS 0 layer 13 leakageEnergy: 1.41e+07 pJ
+TS 0 layer 13 bufferDynamicEnergy: 5.23e+05 pJ (3.94%)
+TS 0 layer 13 icDynamicEnergy: 2.33e+06 pJ (17.54%)
+TS 0 layer 13 coreEnergyADC: 2.36e+05 pJ (1.77%)
+TS 0 layer 13 coreEnergyAccum: 9.48e+06 pJ (71.43%)
+TS 0 layer 13 coreEnergyOther: 7.98e+04 pJ (0.60%)
+TS 0 layer 13 coreEnergyPopcnt: 6.24e+05 pJ (4.70%)
+TS 0 layer 13 arrayReadDynamicEnergy: 1.00e+07 pJ (75.53%)
+TS 0 layer 13 arrayEnergyADC: 2.36e+05 pJ (1.77%)
+TS 0 layer 13 arrayEnergyAccum: 9.16e+06 pJ (69.05%)
+TS 0 layer 13 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 13 arrayEnergyPopcnt: 6.24e+05 pJ (4.70%)
+TS 0 layer 13 readDynamicEnergyBuffer: 1.28e+06 pJ (9.63%)
+TS 0 layer 13 readDynamicEnergyIC: 5.89e+06 pJ (44.36%)
+Time elapsed before estimating layer 14 ts 1 ====> 385.94 s
+TS 0 layer 14 readLatency: 2.87e+06 ns
+TS 0 layer 14 bufferLatency: 2.59e+06 ns (90.19%)
+TS 0 layer 14 icLatency: 9.93e+03 ns
+TS 0 layer 14 coreLatencyADC: 3.22e+03 ns (0.11%)
+TS 0 layer 14 coreLatencyAccum: 2.48e+05 ns (8.65%)
+TS 0 layer 14 coreLatencyOther: 2.02e+04 ns (0.70%)
+TS 0 layer 14 arrayReadLatency: 2.48e+05 ns (8.64%)
+TS 0 layer 14 arrayLatencyADC: 3.22e+03 ns (0.11%)
+TS 0 layer 14 arrayLatencyAccum: 2.45e+05 ns (8.53%)
+TS 0 layer 14 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 14 readLatencyBuffer: 2.67e+06 ns (93.09%)
+TS 0 layer 14 readLatencyIC: 1.99e+04 ns (0.69%)
+TS 0 layer 14 readDynamicEnergy: 4.23e+07 pJ
+TS 0 layer 14 leakagePower: 17773.00 uW
+TS 0 layer 14 leakageEnergy: 5.10e+07 pJ
+TS 0 layer 14 bufferDynamicEnergy: 1.05e+06 pJ (2.47%)
+TS 0 layer 14 icDynamicEnergy: 4.66e+06 pJ (11.01%)
+TS 0 layer 14 coreEnergyADC: 4.71e+05 pJ (1.11%)
+TS 0 layer 14 coreEnergyAccum: 3.48e+07 pJ (82.27%)
+TS 0 layer 14 coreEnergyOther: 7.98e+04 pJ (0.19%)
+TS 0 layer 14 coreEnergyPopcnt: 1.25e+06 pJ (2.95%)
+TS 0 layer 14 arrayReadDynamicEnergy: 3.59e+07 pJ (84.84%)
+TS 0 layer 14 arrayEnergyADC: 4.71e+05 pJ (1.11%)
+TS 0 layer 14 arrayEnergyAccum: 3.42e+07 pJ (80.77%)
+TS 0 layer 14 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 14 arrayEnergyPopcnt: 1.25e+06 pJ (2.95%)
+TS 0 layer 14 readDynamicEnergyBuffer: 2.56e+06 pJ (6.04%)
+TS 0 layer 14 readDynamicEnergyIC: 1.18e+07 pJ (27.83%)
+Time elapsed before estimating layer 15 ts 1 ====> 404.91 s
+TS 0 layer 15 readLatency: 2.94e+06 ns
+TS 0 layer 15 bufferLatency: 2.59e+06 ns (88.22%)
+TS 0 layer 15 icLatency: 9.93e+03 ns
+TS 0 layer 15 coreLatencyADC: 3.22e+03 ns (0.11%)
+TS 0 layer 15 coreLatencyAccum: 3.12e+05 ns (10.64%)
+TS 0 layer 15 coreLatencyOther: 2.02e+04 ns (0.69%)
+TS 0 layer 15 arrayReadLatency: 3.12e+05 ns (10.63%)
+TS 0 layer 15 arrayLatencyADC: 3.22e+03 ns (0.11%)
+TS 0 layer 15 arrayLatencyAccum: 3.09e+05 ns (10.52%)
+TS 0 layer 15 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 15 readLatencyBuffer: 2.67e+06 ns (91.05%)
+TS 0 layer 15 readLatencyIC: 1.99e+04 ns (0.68%)
+TS 0 layer 15 readDynamicEnergy: 5.59e+07 pJ
+TS 0 layer 15 leakagePower: 17773.00 uW
+TS 0 layer 15 leakageEnergy: 5.22e+07 pJ
+TS 0 layer 15 bufferDynamicEnergy: 1.05e+06 pJ (1.87%)
+TS 0 layer 15 icDynamicEnergy: 4.66e+06 pJ (8.33%)
+TS 0 layer 15 coreEnergyADC: 4.71e+05 pJ (0.84%)
+TS 0 layer 15 coreEnergyAccum: 4.84e+07 pJ (86.58%)
+TS 0 layer 15 coreEnergyOther: 7.98e+04 pJ (0.14%)
+TS 0 layer 15 coreEnergyPopcnt: 1.25e+06 pJ (2.23%)
+TS 0 layer 15 arrayReadDynamicEnergy: 4.95e+07 pJ (88.53%)
+TS 0 layer 15 arrayEnergyADC: 4.71e+05 pJ (0.84%)
+TS 0 layer 15 arrayEnergyAccum: 4.78e+07 pJ (85.45%)
+TS 0 layer 15 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 15 arrayEnergyPopcnt: 1.25e+06 pJ (2.23%)
+TS 0 layer 15 readDynamicEnergyBuffer: 2.56e+06 pJ (4.57%)
+TS 0 layer 15 readDynamicEnergyIC: 1.18e+07 pJ (21.06%)

@@ -1,0 +1,19 @@
+FROM ubuntu:20.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt update
+RUN apt install -y openssh-server build-essential python3.8 python3.8-dev python3-pip bc
+RUN pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy matplotlib tqdm scipy pandas pyngleton pybind11
+
+RUN mkdir /var/run/sshd && \
+    sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/g' /etc/ssh/sshd_config && \
+    sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+RUN echo 'root:compass' | chpasswd
+
+WORKDIR /compass_ae
+
+EXPOSE 22
+
+CMD ["/usr/sbin/sshd", "-D", "-o", "ListenAddress=0.0.0.0"]

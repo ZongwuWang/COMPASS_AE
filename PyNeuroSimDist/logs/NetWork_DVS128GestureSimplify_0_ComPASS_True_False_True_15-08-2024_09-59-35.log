@@ -1,0 +1,287 @@
+=============== Parameter Loading Finish ===============
+Time elapsed = 0.06 s
+=============== Network Structure Loading Finish ===============
+{'IH': 128, 'IW': 128, 'Cin': 2, 'KH': 3, 'KW': 3, 'Cout': 128, 'pooling': 1, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 128, 'weight_col': 18}
+{'IH': 64, 'IW': 64, 'Cin': 128, 'KH': 3, 'KW': 3, 'Cout': 128, 'pooling': 1, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 128, 'weight_col': 1152}
+{'IH': 32, 'IW': 32, 'Cin': 128, 'KH': 3, 'KW': 3, 'Cout': 128, 'pooling': 1, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 128, 'weight_col': 1152}
+{'IH': 16, 'IW': 16, 'Cin': 128, 'KH': 3, 'KW': 3, 'Cout': 128, 'pooling': 1, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 128, 'weight_col': 1152}
+{'IH': 1, 'IW': 1, 'Cin': 8192, 'KH': 1, 'KW': 1, 'Cout': 512, 'pooling': 1, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 512, 'weight_col': 8192}
+{'IH': 1, 'IW': 1, 'Cin': 512, 'KH': 1, 'KW': 1, 'Cout': 11, 'pooling': 1, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 11, 'weight_col': 512}
+
+------------------------------ FloorPlan --------------------------------
+Tile and PE size are optimized to maximize memory utilization ( = memory mapped by synapse / total memory on chip)
+Desired Conventional Mapped Tile Storage Size: 1024 x 1024
+Desired Conventional PE Storage Size: 512 x 512
+User-defined SubArray Size: 128 x 128
+----------------- # of tile used for each layer -----------------
+Layer 1: 2
+Layer 2: 18
+Layer 3: 9
+Layer 4: 9
+Layer 5: 64
+Layer 6: 4
+----------------- Speed-up of each layer ------------------
+Layer 1: 64
+Layer 2: 16
+Layer 3: 8
+Layer 4: 8
+Layer 5: 2
+Layer 6: 8
+----------------- Utilization of each layer ------------------
+Layer 1: 0.5625
+Layer 2: 1.0
+Layer 3: 1.0
+Layer 4: 1.0
+Layer 5: 1.0
+Layer 6: 0.0859375
+Memory Utilization of Whole Chip: 95.7252358490566 %
+---------------------------- FloorPlan Done ------------------------------
+Chip Area: 3.69e+07 um^2
+Chip ADC (or S/As and precharger for SRAM) Area: 1.53e+06 um^2 (4.13 %)
+Chip IC Area (Global and Tile/PE local): 3.46e+06 um^2 (9.38 %)
+Chip Accum (subarray level: adders, shiftAdds; PE/Tile/Global level: accumulation units) Area: 5.71e+06 um^2 (15.45 %)
+Chip Other (e.g. decoders, mux, switchmatrix, buffers, IC, pooling and activation units) Area: 8.24e+06 um^2 (22.32 %)
+Chip Popcnt Area: 1.67e+05 um^2 (0.45 %)
+Chip Array Area: 1.51e+07 um^2 (40.80 %)
+Time elapsed = 4.29 s
+=============== Chip Clk Period Estimating ===============
+Time elapsed after estimating layer 1 = 32.34 s
+Chip Clk Period: 1.0281894905588658 ns
+=============== Chip Performance Estimating ===============
+Time elapsed before estimating layer 1 ts 1 ====> 59.87 s
+TS 0 layer 1 readLatency: 1.23e+07 ns
+TS 0 layer 1 bufferLatency: 9.02e+06 ns (73.40%)
+TS 0 layer 1 icLatency: 1.74e+00 ns
+TS 0 layer 1 coreLatencyADC: 3.37e+04 ns (0.27%)
+TS 0 layer 1 coreLatencyAccum: 1.11e+06 ns (9.01%)
+TS 0 layer 1 coreLatencyOther: 2.13e+06 ns (17.31%)
+TS 0 layer 1 arrayReadLatency: 1.14e+06 ns (9.25%)
+TS 0 layer 1 arrayLatencyADC: 3.37e+04 ns (0.27%)
+TS 0 layer 1 arrayLatencyAccum: 1.10e+06 ns (8.98%)
+TS 0 layer 1 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 1 readLatencyBuffer: 9.02e+06 ns (73.40%)
+TS 0 layer 1 readLatencyIC: 3.48e+00 ns (0.00%)
+TS 0 layer 1 readDynamicEnergy: 3.18e+07 pJ
+TS 0 layer 1 leakagePower: 13.39 uW
+TS 0 layer 1 leakageEnergy: 1.65e+05 pJ
+TS 0 layer 1 bufferDynamicEnergy: 2.42e+04 pJ (0.08%)
+TS 0 layer 1 icDynamicEnergy: 1.68e+01 pJ (0.00%)
+TS 0 layer 1 coreEnergyADC: 2.73e+05 pJ (0.86%)
+TS 0 layer 1 coreEnergyAccum: 2.48e+07 pJ (78.08%)
+TS 0 layer 1 coreEnergyOther: 6.67e+06 pJ (20.98%)
+TS 0 layer 1 coreEnergyPopcnt: 7.25e+05 pJ (2.28%)
+TS 0 layer 1 arrayReadDynamicEnergy: 2.51e+07 pJ (78.94%)
+TS 0 layer 1 arrayEnergyADC: 2.73e+05 pJ (0.86%)
+TS 0 layer 1 arrayEnergyAccum: 2.48e+07 pJ (78.08%)
+TS 0 layer 1 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 1 arrayEnergyPopcnt: 7.25e+05 pJ (2.28%)
+TS 0 layer 1 readDynamicEnergyBuffer: 2.42e+04 pJ (0.08%)
+TS 0 layer 1 readDynamicEnergyIC: 3.97e+01 pJ (0.00%)
+Time elapsed before estimating layer 2 ts 1 ====> 147.46 s
+TS 0 layer 2 readLatency: 8.21e+06 ns
+TS 0 layer 2 bufferLatency: 1.38e+06 ns (16.78%)
+TS 0 layer 2 icLatency: 2.21e+02 ns
+TS 0 layer 2 coreLatencyADC: 3.37e+04 ns (0.41%)
+TS 0 layer 2 coreLatencyAccum: 6.27e+06 ns (76.39%)
+TS 0 layer 2 coreLatencyOther: 5.32e+05 ns (6.48%)
+TS 0 layer 2 arrayReadLatency: 6.25e+06 ns (76.07%)
+TS 0 layer 2 arrayLatencyADC: 3.37e+04 ns (0.41%)
+TS 0 layer 2 arrayLatencyAccum: 6.21e+06 ns (75.66%)
+TS 0 layer 2 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 2 readLatencyBuffer: 1.38e+06 ns (16.80%)
+TS 0 layer 2 readLatencyIC: 4.43e+02 ns (0.01%)
+TS 0 layer 2 readDynamicEnergy: 7.74e+08 pJ
+TS 0 layer 2 leakagePower: 1193.18 uW
+TS 0 layer 2 leakageEnergy: 9.80e+06 pJ
+TS 0 layer 2 bufferDynamicEnergy: 3.88e+05 pJ (0.05%)
+TS 0 layer 2 icDynamicEnergy: 2.45e+04 pJ (0.00%)
+TS 0 layer 2 coreEnergyADC: 2.46e+06 pJ (0.32%)
+TS 0 layer 2 coreEnergyAccum: 7.69e+08 pJ (99.43%)
+TS 0 layer 2 coreEnergyOther: 1.67e+06 pJ (0.22%)
+TS 0 layer 2 coreEnergyPopcnt: 6.52e+06 pJ (0.84%)
+TS 0 layer 2 arrayReadDynamicEnergy: 7.72e+08 pJ (99.74%)
+TS 0 layer 2 arrayEnergyADC: 2.46e+06 pJ (0.32%)
+TS 0 layer 2 arrayEnergyAccum: 7.69e+08 pJ (99.42%)
+TS 0 layer 2 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 2 arrayEnergyPopcnt: 6.52e+06 pJ (0.84%)
+TS 0 layer 2 readDynamicEnergyBuffer: 3.96e+05 pJ (0.05%)
+TS 0 layer 2 readDynamicEnergyIC: 6.12e+04 pJ (0.01%)
+Time elapsed before estimating layer 3 ts 1 ====> 162.08 s
+TS 0 layer 3 readLatency: 3.55e+06 ns
+TS 0 layer 3 bufferLatency: 4.90e+05 ns (13.80%)
+TS 0 layer 3 icLatency: 1.57e+02 ns
+TS 0 layer 3 coreLatencyADC: 1.68e+04 ns (0.47%)
+TS 0 layer 3 coreLatencyAccum: 2.91e+06 ns (82.12%)
+TS 0 layer 3 coreLatencyOther: 1.33e+05 ns (3.75%)
+TS 0 layer 3 arrayReadLatency: 2.93e+06 ns (82.59%)
+TS 0 layer 3 arrayLatencyADC: 1.68e+04 ns (0.47%)
+TS 0 layer 3 arrayLatencyAccum: 2.91e+06 ns (82.11%)
+TS 0 layer 3 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 3 readLatencyBuffer: 4.91e+05 ns (13.83%)
+TS 0 layer 3 readLatencyIC: 3.14e+02 ns (0.01%)
+TS 0 layer 3 readDynamicEnergy: 1.40e+08 pJ
+TS 0 layer 3 leakagePower: 1193.18 uW
+TS 0 layer 3 leakageEnergy: 4.23e+06 pJ
+TS 0 layer 3 bufferDynamicEnergy: 7.12e+04 pJ (0.05%)
+TS 0 layer 3 icDynamicEnergy: 1.74e+04 pJ (0.01%)
+TS 0 layer 3 coreEnergyADC: 6.15e+05 pJ (0.44%)
+TS 0 layer 3 coreEnergyAccum: 1.39e+08 pJ (99.28%)
+TS 0 layer 3 coreEnergyOther: 4.17e+05 pJ (0.30%)
+TS 0 layer 3 coreEnergyPopcnt: 1.63e+06 pJ (1.16%)
+TS 0 layer 3 arrayReadDynamicEnergy: 1.40e+08 pJ (99.71%)
+TS 0 layer 3 arrayEnergyADC: 6.15e+05 pJ (0.44%)
+TS 0 layer 3 arrayEnergyAccum: 1.39e+08 pJ (99.27%)
+TS 0 layer 3 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 3 arrayEnergyPopcnt: 1.63e+06 pJ (1.16%)
+TS 0 layer 3 readDynamicEnergyBuffer: 7.70e+04 pJ (0.05%)
+TS 0 layer 3 readDynamicEnergyIC: 4.35e+04 pJ (0.03%)
+Time elapsed before estimating layer 4 ts 1 ====> 165.40 s
+TS 0 layer 4 readLatency: 8.26e+05 ns
+TS 0 layer 4 bufferLatency: 9.35e+04 ns (11.32%)
+TS 0 layer 4 icLatency: 1.19e+02 ns
+TS 0 layer 4 coreLatencyADC: 4.21e+03 ns (0.51%)
+TS 0 layer 4 coreLatencyAccum: 6.99e+05 ns (84.69%)
+TS 0 layer 4 coreLatencyOther: 3.41e+04 ns (4.13%)
+TS 0 layer 4 arrayReadLatency: 7.03e+05 ns (85.15%)
+TS 0 layer 4 arrayLatencyADC: 4.21e+03 ns (0.51%)
+TS 0 layer 4 arrayLatencyAccum: 6.99e+05 ns (84.64%)
+TS 0 layer 4 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 4 readLatencyBuffer: 9.45e+04 ns (11.45%)
+TS 0 layer 4 readLatencyIC: 2.38e+02 ns (0.03%)
+TS 0 layer 4 readDynamicEnergy: 2.63e+07 pJ
+TS 0 layer 4 leakagePower: 1193.18 uW
+TS 0 layer 4 leakageEnergy: 9.85e+05 pJ
+TS 0 layer 4 bufferDynamicEnergy: 1.52e+04 pJ (0.06%)
+TS 0 layer 4 icDynamicEnergy: 1.32e+04 pJ (0.05%)
+TS 0 layer 4 coreEnergyADC: 1.54e+05 pJ (0.59%)
+TS 0 layer 4 coreEnergyAccum: 2.61e+07 pJ (99.36%)
+TS 0 layer 4 coreEnergyOther: 1.04e+05 pJ (0.40%)
+TS 0 layer 4 coreEnergyPopcnt: 4.08e+05 pJ (1.55%)
+TS 0 layer 4 arrayReadDynamicEnergy: 2.62e+07 pJ (99.91%)
+TS 0 layer 4 arrayEnergyADC: 1.54e+05 pJ (0.59%)
+TS 0 layer 4 arrayEnergyAccum: 2.61e+07 pJ (99.32%)
+TS 0 layer 4 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 4 arrayEnergyPopcnt: 4.08e+05 pJ (1.55%)
+TS 0 layer 4 readDynamicEnergyBuffer: 1.96e+04 pJ (0.07%)
+TS 0 layer 4 readDynamicEnergyIC: 3.29e+04 pJ (0.13%)
+Time elapsed before estimating layer 5 ts 1 ====> 171.81 s
+TS 0 layer 5 readLatency: -1.74e+03 ns
+TS 0 layer 5 bufferLatency: 6.37e+04 ns (-3659.29%)
+TS 0 layer 5 icLatency: 7.62e+03 ns
+TS 0 layer 5 coreLatencyADC: 6.58e+01 ns (-3.78%)
+TS 0 layer 5 coreLatencyAccum: 1.94e+04 ns (-1112.22%)
+TS 0 layer 5 coreLatencyOther: 1.52e+03 ns (-87.25%)
+TS 0 layer 5 arrayReadLatency: 1.32e+04 ns (-759.87%)
+TS 0 layer 5 arrayLatencyADC: 6.58e+01 ns (-3.78%)
+TS 0 layer 5 arrayLatencyAccum: 1.32e+04 ns (-756.09%)
+TS 0 layer 5 arrayLatencyOther: 0.00e+00 ns (-0.00%)
+TS 0 layer 5 readLatencyBuffer: 1.28e+05 ns (-7328.75%)
+TS 0 layer 5 readLatencyIC: 1.52e+04 ns (-875.89%)
+TS 0 layer 5 readDynamicEnergy: 1.21e+06 pJ
+TS 0 layer 5 leakagePower: 31596.44 uW
+TS 0 layer 5 leakageEnergy: -5.50e+04 pJ
+TS 0 layer 5 bufferDynamicEnergy: 1.11e+06 pJ (91.58%)
+TS 0 layer 5 icDynamicEnergy: 6.36e+06 pJ (523.78%)
+TS 0 layer 5 coreEnergyADC: 1.71e+04 pJ (1.41%)
+TS 0 layer 5 coreEnergyAccum: 9.21e+06 pJ (758.94%)
+TS 0 layer 5 coreEnergyOther: 1.64e+03 pJ (0.13%)
+TS 0 layer 5 coreEnergyPopcnt: 4.53e+04 pJ (3.73%)
+TS 0 layer 5 arrayReadDynamicEnergy: 7.23e+06 pJ (595.72%)
+TS 0 layer 5 arrayEnergyADC: 1.71e+04 pJ (1.41%)
+TS 0 layer 5 arrayEnergyAccum: 7.22e+06 pJ (594.31%)
+TS 0 layer 5 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 5 arrayEnergyPopcnt: 4.53e+04 pJ (3.73%)
+TS 0 layer 5 readDynamicEnergyBuffer: 3.17e+06 pJ (261.33%)
+TS 0 layer 5 readDynamicEnergyIC: 1.61e+07 pJ (1324.37%)
+Time elapsed before estimating layer 6 ts 1 ====> 171.94 s
+TS 0 layer 6 readLatency: 2.35e+03 ns
+TS 0 layer 6 bufferLatency: 1.18e+03 ns (50.20%)
+TS 0 layer 6 icLatency: 3.75e+01 ns
+TS 0 layer 6 coreLatencyADC: 1.41e+00 ns (0.06%)
+TS 0 layer 6 coreLatencyAccum: 3.86e+02 ns (16.40%)
+TS 0 layer 6 coreLatencyOther: 1.12e+03 ns (47.44%)
+TS 0 layer 6 arrayReadLatency: 2.84e+02 ns (12.07%)
+TS 0 layer 6 arrayLatencyADC: 1.41e+00 ns (0.06%)
+TS 0 layer 6 arrayLatencyAccum: 2.83e+02 ns (12.01%)
+TS 0 layer 6 arrayLatencyOther: 0.00e+00 ns (0.00%)
+TS 0 layer 6 readLatencyBuffer: 1.54e+03 ns (65.33%)
+TS 0 layer 6 readLatencyIC: 7.50e+01 ns (3.18%)
+TS 0 layer 6 readDynamicEnergy: 1.89e+04 pJ
+TS 0 layer 6 leakagePower: 98.39 uW
+TS 0 layer 6 leakageEnergy: 2.32e+02 pJ
+TS 0 layer 6 bufferDynamicEnergy: 3.26e+02 pJ (1.72%)
+TS 0 layer 6 icDynamicEnergy: 1.33e+03 pJ (7.02%)
+TS 0 layer 6 coreEnergyADC: 2.29e+01 pJ (0.12%)
+TS 0 layer 6 coreEnergyAccum: 1.93e+04 pJ (101.89%)
+TS 0 layer 6 coreEnergyOther: 4.28e+01 pJ (0.23%)
+TS 0 layer 6 coreEnergyPopcnt: 7.08e+02 pJ (3.74%)
+TS 0 layer 6 arrayReadDynamicEnergy: 1.91e+04 pJ (101.05%)
+TS 0 layer 6 arrayEnergyADC: 2.29e+01 pJ (0.12%)
+TS 0 layer 6 arrayEnergyAccum: 1.91e+04 pJ (100.93%)
+TS 0 layer 6 arrayEnergyOther: 0.00e+00 pJ (0.00%)
+TS 0 layer 6 arrayEnergyPopcnt: 7.08e+02 pJ (3.74%)
+TS 0 layer 6 readDynamicEnergyBuffer: 8.06e+02 pJ (4.26%)
+TS 0 layer 6 readDynamicEnergyIC: 3.06e+03 pJ (16.19%)
+=============== Chip Performance Estimating Finish ===============
+Max SNN Latency Layer: 0, Max Time Step: -1
+SNN pipeline latency: 0.012288717990355344
+Average of the snn layer latency (per timestep): 0.004145586881414551
+Mean of the snn layer latency (per timestep): 0.004145586881414551
+STD of the snn layer latency (per timestep): 0.004629035425600344
+=============== Chip Area Analysis ===============
+Chip Area: 3.69e+07 um^2
+Chip ADC (or S/As and precharger for SRAM) Area: 1.53e+06 um^2 (4.13 %)
+Chip IC Area (Global and Tile/PE local): 3.46e+06 um^2 (9.38 %)
+Chip Accum (subarray level: adders, shiftAdds; PE/Tile/Global level: accumulation units) Area: 5.71e+06 um^2 (15.45 %)
+Chip Other (e.g. decoders, mux, switchmatrix, buffers, IC, pooling and activation units) Area: 8.24e+06 um^2 (22.32 %)
+Chip Popcnt Area: 1.67e+05 um^2 (0.45 %)
+Chip Array Area: 1.51e+07 um^2 (40.80 %)
+=============== Chip Latency Analysis ===============
+Pipelined Clock Latency (per Layer per mergedTimeStep): 1.23e+07 ns
+Buffer Latency (slowest timestep of the slowest layer): 9.02e+06 ns         (73.40 % of pipeline latency)
+IC Latency (slowest timestep of the slowest layer): 1.74e+00 ns         (0.00 % of pipeline latency)
+Core Latency ADC (slowest timestep of the slowest layer): 3.37e+04 ns         (0.27 % of pipeline latency)
+Core Latency Accum (slowest timestep of the slowest layer): 1.11e+06 ns         (9.01 % of pipeline latency)
+Core Latency Other (slowest timestep of the slowest layer): 2.13e+06 ns         (17.31 % of pipeline latency)
+Array Read Latency (slowest timestep of the slowest layer): 1.14e+06 ns           (9.25 % of pipeline latency)
+Array Latency ADC (slowest timestep of the slowest layer): 3.37e+04 ns           (0.27 % of pipeline latency)
+Array Latency Accum (slowest timestep of the slowest layer): 1.10e+06 ns           (8.98 % of pipeline latency)
+Array Latency Other (slowest timestep of the slowest layer): 0.00e+00 ns           (0.00 % of pipeline latency)
+Read Latency Buffer (slowest timestep of the slowest layer): 9.02e+06 ns           (73.40 % of pipeline latency)
+Read Latency IC (slowest timestep of the slowest layer): 3.48e+00 ns           (0.00 % of pipeline latency)
+Total Read Latency (per image): 2.49e+07 ns
+Total Buffer Latency (per image): 1.10e+07 ns         (44.41 % of total read latency)
+Total IC Latency (per image): 8.16e+03 ns         (0.03 % of total read latency)
+Total Core Latency ADC (per image): 8.85e+04 ns         (0.36 % of total read latency)
+Total Core Latency Accum (per image): 1.10e+07 ns         (44.27 % of total read latency)
+Total Core Latency Other (per image): 2.83e+06 ns         (11.37 % of total read latency)
+Total Array Read Latency (per image): 1.10e+07 ns         (44.34 % of total read latency)
+Total Array Latency ADC (per image): 8.85e+04 ns         (0.36 % of total read latency)
+Total Array Latency Accum (per image): 1.09e+07 ns         (43.99 % of total read latency)
+Total Array Latency Other (per image): 0.00e+00 ns         (0.00 % of total read latency)
+Total Read Latency Buffer (per image): 1.11e+07 ns         (44.68 % of total read latency)
+Total Read Latency IC (per image): 1.63e+04 ns         (0.07 % of total read latency)
+=============== Chip Energy Analysis ===============
+Total Read Dynamic Energy (per image): 9.74e+08 pJ
+Total Buffer Dynamic Energy (per image): 1.61e+06 pJ         (0.17 % of total read dynamic energy)
+Total IC Dynamic Energy (per image): 6.42e+06 pJ         (0.66 % of total read dynamic energy)
+Total Core Energy ADC (per image): 3.52e+06 pJ         (0.36 % of total read dynamic energy)
+Total Core Energy Accum (per image): 9.69e+08 pJ         (99.53 % of total read dynamic energy)
+Total Core Energy Other (per image): 8.87e+06 pJ         (0.91 % of total read dynamic energy)
+Total Core Energy Popcnt (per image): 9.33e+06 pJ         (0.96 % of total read dynamic energy)
+Total Leakage Power (per image): 35287.77 uW
+Total Leakage Energy (per image): 4.34e+08 pJ
+Total Array Read Dynamic Energy (per image): 9.70e+08 pJ (99.68 % of total read dynamic energy)
+Total Array Energy ADC (per image): 3.52e+06 pJ (0.36 % of total read dynamic energy)
+Total Array Energy Accum (per image): 9.67e+08 pJ (99.32 % of total read dynamic energy)
+Total Array Energy Other (per image): 0.00e+00 pJ (0.00 % of total read dynamic energy)
+Total Array Energy Popcnt (per image): 9.33e+06 pJ (0.96 % of total read dynamic energy)
+Total Read Dynamic Energy Buffer (per image): 3.69e+06 pJ (0.38 % of total read dynamic energy)
+Total Read Dynamic Energy IC (per image): 1.62e+07 pJ (1.67 % of total read dynamic energy)
+
+=============== Chip Performance Estimating Finish ===============
+Energy Efficiency TOPS/W (Pipelined Process without IC Energy): 97.6796324675737
+Throughput TOPS (Pipelined Process with IC Delay): 13.584364596129271
+Throughput FPS (Pipelined Process with IC Delay): 81.37545354892498
+Compute Efficiency TOPS/mm^2 (Pipelined Process with IC Delay): 0.3679732218833411
+Simulation finished, total time elapsed = 171.95 s

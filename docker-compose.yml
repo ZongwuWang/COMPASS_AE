@@ -1,0 +1,22 @@
+version: '3'
+services:
+  compass_cpu:
+    image: compass_ae_cpu:0.0.1
+    container_name: compass_ae_cpu
+    build:
+      context: .
+      dockerfile: Dockerfile_cpu
+    ports:
+    - "10001:22"
+    volumes:
+    - .:/compass_ae
+  compass_gpu:
+    image: compass_ae_gpu:0.0.1
+    container_name: compass_ae_gpu
+    build:
+      context: .
+      dockerfile: Dockerfile_gpu
+    ports:
+    - "10002:22"
+    volumes:
+    - .:/compass_ae

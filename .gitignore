@@ -1,0 +1,6 @@
+layer_record_*/
+codes/__pycache__/
+test.ipynb
+.vscode/setting.json
+jupyter.log
+.virtual_documents/
