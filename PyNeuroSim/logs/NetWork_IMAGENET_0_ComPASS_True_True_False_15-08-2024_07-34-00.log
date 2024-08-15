@@ -1,0 +1,87 @@
+=============== Parameter Loading Finish ===============
+Time elapsed = 0.06 s
+=============== Network Structure Loading Finish ===============
+{'IH': 56, 'IW': 56, 'Cin': 64, 'KH': 3, 'KW': 3, 'Cout': 64, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 64, 'weight_col': 576}
+{'IH': 56, 'IW': 56, 'Cin': 64, 'KH': 3, 'KW': 3, 'Cout': 64, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 64, 'weight_col': 576}
+{'IH': 56, 'IW': 56, 'Cin': 64, 'KH': 3, 'KW': 3, 'Cout': 64, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 64, 'weight_col': 576}
+{'IH': 56, 'IW': 56, 'Cin': 64, 'KH': 3, 'KW': 3, 'Cout': 64, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 64, 'weight_col': 576}
+{'IH': 56, 'IW': 56, 'Cin': 64, 'KH': 3, 'KW': 3, 'Cout': 128, 'pooling': 0, 'stride': 2, 'isSNN': 1, 'T': 100, 'weight_row': 128, 'weight_col': 576}
+{'IH': 28, 'IW': 28, 'Cin': 128, 'KH': 3, 'KW': 3, 'Cout': 128, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 128, 'weight_col': 1152}
+{'IH': 28, 'IW': 28, 'Cin': 128, 'KH': 3, 'KW': 3, 'Cout': 128, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 128, 'weight_col': 1152}
+{'IH': 28, 'IW': 28, 'Cin': 128, 'KH': 3, 'KW': 3, 'Cout': 128, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 128, 'weight_col': 1152}
+{'IH': 28, 'IW': 28, 'Cin': 128, 'KH': 3, 'KW': 3, 'Cout': 256, 'pooling': 0, 'stride': 2, 'isSNN': 1, 'T': 100, 'weight_row': 256, 'weight_col': 1152}
+{'IH': 14, 'IW': 14, 'Cin': 256, 'KH': 3, 'KW': 3, 'Cout': 256, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 256, 'weight_col': 2304}
+{'IH': 14, 'IW': 14, 'Cin': 256, 'KH': 3, 'KW': 3, 'Cout': 256, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 256, 'weight_col': 2304}
+{'IH': 14, 'IW': 14, 'Cin': 256, 'KH': 3, 'KW': 3, 'Cout': 256, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 256, 'weight_col': 2304}
+{'IH': 14, 'IW': 14, 'Cin': 256, 'KH': 3, 'KW': 3, 'Cout': 512, 'pooling': 0, 'stride': 2, 'isSNN': 1, 'T': 100, 'weight_row': 512, 'weight_col': 2304}
+{'IH': 7, 'IW': 7, 'Cin': 512, 'KH': 3, 'KW': 3, 'Cout': 512, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 512, 'weight_col': 4608}
+{'IH': 7, 'IW': 7, 'Cin': 512, 'KH': 3, 'KW': 3, 'Cout': 512, 'pooling': 0, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 512, 'weight_col': 4608}
+{'IH': 7, 'IW': 7, 'Cin': 512, 'KH': 3, 'KW': 3, 'Cout': 512, 'pooling': 1, 'stride': 1, 'isSNN': 1, 'T': 100, 'weight_row': 512, 'weight_col': 4608}
+
+------------------------------ FloorPlan --------------------------------
+Tile and PE size are optimized to maximize memory utilization ( = memory mapped by synapse / total memory on chip)
+Desired Conventional Mapped Tile Storage Size: 1024 x 1024
+Desired Conventional PE Storage Size: 512 x 512
+User-defined SubArray Size: 128 x 128
+----------------- # of tile used for each layer -----------------
+Layer 1: 40
+Layer 2: 40
+Layer 3: 40
+Layer 4: 40
+Layer 5: 40
+Layer 6: 18
+Layer 7: 18
+Layer 8: 18
+Layer 9: 36
+Layer 10: 18
+Layer 11: 18
+Layer 12: 18
+Layer 13: 36
+Layer 14: 36
+Layer 15: 36
+Layer 16: 36
+----------------- Speed-up of each layer ------------------
+Layer 1: 64
+Layer 2: 64
+Layer 3: 64
+Layer 4: 64
+Layer 5: 64
+Layer 6: 16
+Layer 7: 16
+Layer 8: 16
+Layer 9: 16
+Layer 10: 4
+Layer 11: 4
+Layer 12: 4
+Layer 13: 4
+Layer 14: 2
+Layer 15: 2
+Layer 16: 2
+----------------- Utilization of each layer ------------------
+Layer 1: 0.45
+Layer 2: 0.45
+Layer 3: 0.45
+Layer 4: 0.45
+Layer 5: 0.9
+Layer 6: 1.0
+Layer 7: 1.0
+Layer 8: 1.0
+Layer 9: 1.0
+Layer 10: 1.0
+Layer 11: 1.0
+Layer 12: 1.0
+Layer 13: 1.0
+Layer 14: 1.0
+Layer 15: 1.0
+Layer 16: 1.0
+Memory Utilization of Whole Chip: 81.14754098360656 %
+---------------------------- FloorPlan Done ------------------------------
+Chip Area: 1.46e+08 um^2
+Chip ADC (or S/As and precharger for SRAM) Area: 7.02e+06 um^2 (4.82 %)
+Chip IC Area (Global and Tile/PE local): 5.61e+06 um^2 (3.85 %)
+Chip Accum (subarray level: adders, shiftAdds; PE/Tile/Global level: accumulation units) Area: 2.63e+07 um^2 (18.04 %)
+Chip Other (e.g. decoders, mux, switchmatrix, buffers, IC, pooling and activation units) Area: 2.40e+07 um^2 (16.47 %)
+Chip Popcnt Area: 7.67e+05 um^2 (0.53 %)
+Chip Array Area: 6.93e+07 um^2 (47.60 %)
+Time elapsed = 19.15 s
+=============== Chip Clk Period Estimating ===============

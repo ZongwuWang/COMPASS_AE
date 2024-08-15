@@ -1,0 +1,2 @@
+Namespace(T=100, amp=False, b=1, channels=128, cupy=False, data_dir='/root/ReRAM_SNN_Acce/codes/datasets/DVS128Gesture/', dataset_name='DVS128GestureSimplify', device='cuda:3', epochs=64, j=4, log_dir_prefix='mylogs', lr=0.001, mode='infer', momentum=0.9, opt='adam')
+/root/spikingjelly/spikingjelly/activation_based/examples/classify_dvsg_ddp.py -T 100 -device cuda:3 -b 1 -epochs 64 -dataset_name DVS128GestureSimplify -data-dir /root/ReRAM_SNN_Acce/codes/datasets/DVS128Gesture/ -log-dir-prefix mylogs -opt adam -lr 0.001 -mode infer
