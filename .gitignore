@@ -4,3 +4,6 @@ test.ipynb
 .vscode/setting.json
 jupyter.log
 .virtual_documents/
+PyNeuroSim/logs/
+^PyNeuroSim/err_logs_ablation_2024-04-17_17-25-33/
+PyNeuroSim/err_logs*

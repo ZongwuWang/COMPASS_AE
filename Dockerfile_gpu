@@ -3,9 +3,10 @@ FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update
-RUN apt install -y openssh-server build-essential python3.8 python3.8-dev python3-pip bc
+RUN apt install -y openssh-server build-essential python3.8 python3.8-dev python3-pip
 RUN pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy pybind11 matplotlib tqdm scipy pandas pyngleton networkx==2.8.8
 RUN pip3 install torch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 tensorboard --index-url https://download.pytorch.org/whl/cu118
+RUN apt install -y bc
 
 RUN mkdir /var/run/sshd && \
     sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/g' /etc/ssh/sshd_config && \
