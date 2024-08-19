@@ -144,7 +144,8 @@ dmypy.json
 
 myexamples/__pycache__
 myexamples/datasets
-PyNeuroSim/layer_record_*
+^PyNeuroSim/*.tar
+# PyNeuroSim/layer_record_*
 PyNeuroSim_bak/
 logs/
 inferlogs/

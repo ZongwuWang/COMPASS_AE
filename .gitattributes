@@ -1,0 +1,9 @@
+layer_record_CIFAR10DVS.tar.aa filter=lfs diff=lfs merge=lfs -text
+layer_record_CIFAR10DVS.tar.ab filter=lfs diff=lfs merge=lfs -text
+layer_record_DVS128GestureSimplify.tar.aa filter=lfs diff=lfs merge=lfs -text
+layer_record_DVS128GestureSimplify.tar.ab filter=lfs diff=lfs merge=lfs -text
+layer_record_IMAGENET.tar.aa filter=lfs diff=lfs merge=lfs -text
+layer_record_IMAGENET.tar.ab filter=lfs diff=lfs merge=lfs -text
+layer_record_IMAGENET.tar.ac filter=lfs diff=lfs merge=lfs -text
+layer_record_IMAGENET.tar.ad filter=lfs diff=lfs merge=lfs -text
+layer_record_IMAGENET.tar.ae filter=lfs diff=lfs merge=lfs -text
