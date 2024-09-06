@@ -78,7 +78,7 @@ Reproducing the complete experimental results involves four steps: 1) spiking ne
 
 ### Model training and trace generation
 
-We training the SNN models with spikingjelly framework, and it is included in \textbf{\$ReRAM\_SNN\_Acce/spikingjelly} folder. We provide script \textit{run\_demo.sh} for training and inference.
+We training the SNN models with spikingjelly framework, and it is included in \textbf{COMPASS\_AE/spikingjelly} folder. We provide script \textit{run\_demo.sh} for training and inference.
 
 ```shell
 > cd COMPASS_AE/spikingjelly
@@ -94,7 +94,7 @@ Due to the long training time, we provide the trained model files and the corres
 
 ### Hardware simulation
 
-We extended the NeuroSim simulator for SNN simulation, and the simulator code is put in \textbf{\$ReRAM\_SNN\_Acce/PyNeuroSim} folder.
+We extended the NeuroSim simulator for SNN simulation, and the simulator code is put in \textbf{COMPASS\_AE/PyNeuroSim} folder.
 We provide a script (\textit{run\_ablation.sh}) to reproduce the results in the paper.
 
 ```shell
@@ -106,7 +106,7 @@ This will create a \textbf{logs} folder and an \textbf{err\_logs\_ablation\_[tim
 
 ### Result visualization
 
-We provide a jupyter notebook (PyNeuroSimResultAnalysisMICRO24.ipynb) in the \textbf{\$ReRAM\_SNN\_Acce/PyNeuroSim/scripts} for result visualization. To visualize the generated results, we need to change the \textit{fdir} in the jupyter notebook to \textbf{err\_logs\_ablation\_[timestamp]} defined in \ref{sec:hwsim}.
+We provide a jupyter notebook (PyNeuroSimResultAnalysisMICRO24.ipynb) in the \textbf{COMPASS\_AE/PyNeuroSim/scripts} for result visualization. To visualize the generated results, we need to change the \textit{fdir} in the jupyter notebook to \textbf{err\_logs\_ablation\_[timestamp]} defined in \ref{sec:hwsim}.
 
 ## Evaluation and expected results
 

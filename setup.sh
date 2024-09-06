@@ -13,8 +13,8 @@ pushd spikingjelly/PyNeuroSim/
 # tar cvf - layer_record_DVS128GestureSimplify/ | split --bytes=2000M - layer_record_DVS128GestureSimplify.tar.
 # tar cvf - layer_record_IMAGENET/ | split --bytes=2000M - layer_record_IMAGENET.tar.
 
-cat layer_record_CIFAR10DVS.tar.* | tar xvf - -C tmp
-cat layer_record_DVS128GestureSimplify.tar.* | tar xvf - -C tmp
-cat layer_record_IMAGENET.tar.* | tar xvf - -C tmp
+cat layer_record_CIFAR10DVS.tar.* | tar xvf -
+cat layer_record_DVS128GestureSimplify.tar.* | tar xvf -
+cat layer_record_IMAGENET.tar.* | tar xvf -
 
 popd
